@@ -6,10 +6,10 @@ metadata:
   namespace: dev
 spec:
   replicas: 1
-    selector:
-    matchLabels:
-      app: mighty-fine
   template:
+    metadata:
+      labels:
+        app: mighty-fine
     spec:
       containers:
       - name: mighty-fine
